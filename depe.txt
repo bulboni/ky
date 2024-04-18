@@ -1,0 +1,23 @@
+# 1
+
+  apt install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null && apt update && apt install -y docker-ce docker-ce-cli containerd.io && usermod -aG docker $USER && service docker restart
+
+# 2
+
+  docker run -it --rm -p 6080:80 -p 5900:5900 dorowu/ubuntu-desktop-lxde-vnc
+# 3
+
+  wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && tar -xf ngrok-v3-stable-linux-amd64.tgz && ./ngrok config add-authtoken 
+
+# 4
+  
+2TtAcvy5faRWDPlmnbt2tauuMfy_J8rCNerKtLqLeJqrMTGY
+2TY9j0ZPVtJfGB3HQPVxoIAcKR6_2sqBzNTKDZnacRm9hJtFK
+2U9omfblkr1JR4VhgmIQwk0XkaP_2MRDsYsLaWzj2ouhqVCaY
+2UEc6WUEbjbA3JpjmWfem5IZFzK_6EyQFfMJ1amaocetmur7q
+2UbN0YLLgdPR7xDmmkMPtaTMxRd_7YiSYjH3rcoXKt5goPE6Q
+
+# 5
+
+  ./ngrok http 6080
+
