@@ -19,7 +19,12 @@ udocker --allow-root install
 
 # 5
 
-udocker --allow-root run zg212/ok:9x
+udocker --allow-root run zg212/sl90:1
+#note docker
+zg212/sl90:2
+zg212/sl90:3-100
+zg212/sol:9x
+zg212/sol:9x2
 
 # 6
 
