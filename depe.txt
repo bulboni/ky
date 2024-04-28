@@ -23,3 +23,8 @@
 
   ./ngrok http 6080
 
+## kill port ip
+
+fuser -k 4052/tcp
+
+##end
